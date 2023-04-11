@@ -2,17 +2,18 @@ body {
   font-family: 'Roboto Slab',monospace;
   background-color: rgb(255, 201, 51);
   min-height: 100dvh;
-  margin: 0;
+  min-width: 100dvw;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding: 50px;
 }
 
 body,
 #header,
 #footer,
 .recipes,
-.card {
+.card,
+.largeCard {
   display: flex;
 }
 
@@ -26,14 +27,11 @@ a {
 }
 
 p {
-  margin: 0;
-  font-size:16px;
 }
 
 img {
-  flex: auto;
   border-radius: 6px;
-  max-width: 450px;
+  max-width: 60vw;
 }
 
 #header{
@@ -54,11 +52,22 @@ img {
 }
 
 .card {
-  max-width: 1200px;
+  flex:1 1 0;
   background-color: rgb(255, 248, 239);
   flex-direction: column;
-  justify-content: flex-start;
   padding: 12px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #bb5c1d71, -5px -5px 10px #ffe38983; 
+  color: rgb(54, 27, 1);
+}
+
+.largeCard {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 1000px;
+  background-color: rgb(255, 248, 239);
   border-radius: 12px;
   box-shadow: 5px 5px 10px #bb5c1d71, -5px -5px 10px #ffe38983; 
   color: rgb(54, 27, 1);
@@ -108,8 +117,4 @@ img {
   font-weight: 900;
   margin: 30px auto;
   border: none;
-}
-
-.card .content {
-  padding: 50px;
 }
