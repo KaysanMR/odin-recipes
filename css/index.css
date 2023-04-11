@@ -1,0 +1,74 @@
+body {
+  font-family: 'Roboto Slab',monospace;
+  background-color: rgb(255, 201, 51);
+  min-height: 100dvh;
+  margin: 0;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+body,
+#header,
+#footer,
+.recipes,
+.card {
+  display: flex;
+}
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  font-size:16px;
+}
+
+#header{
+  width: 10rem;
+  margin: 40px auto;
+  font-size: 64px;
+  font-weight: 900;
+  justify-content: center;
+ 
+}
+
+.recipes {
+  padding-bottom: 200px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: rgb(255, 248, 239);
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #bb5c1d71, -5px -5px 10px #ffe38983; 
+  color: rgb(54, 27, 1);
+}
+
+.container {
+  width: 200px;
+  text-align: left;
+}
+
+.recipe-name {
+  margin: 10px 0;
+}
+img {
+  border-radius: 6px;
+}
+
+#footer {
+  justify-content: center;
+  height: 40px;
+  text-align: center;
+}
